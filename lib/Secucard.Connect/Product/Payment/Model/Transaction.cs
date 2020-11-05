@@ -122,6 +122,9 @@ namespace Secucard.Connect.Product.Payment.Model
         [DataMember(Name = "payment_action")]
         public string PaymentAction { get; set; } = PaymentActionSale;
 
+        [DataMember(Name = "demo")]
+        public bool Demo { get; set; }
+
         public override string ToString()
         {
             return "Transaction{" +
